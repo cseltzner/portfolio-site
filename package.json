@@ -1,0 +1,21 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "Personal portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "build-ts": "tsc",
+    "build-sass": "sass ./sass/main.scss ./dist/main.css",
+    "watch-ts": "tsc --watch",
+    "watch-sass": "sass ./sass/main.scss ./dist/main.css --watch",
+    "dev": "concurrently \"npm:watch-*\" \"live-server\""
+  },
+  "author": "Chase Seltzner",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4"
+  }
+}
