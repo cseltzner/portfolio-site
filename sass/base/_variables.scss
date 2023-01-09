@@ -1,3 +1,42 @@
+// Colors
+:root {
+  --color-white: #edf3ff;
+  --color-dark: #313440;
+  --color-purple: #8356b3;
+  --color-purple-light: #d0bdf4;
+  --color-secondary: #a0d2eb;
+}
+
+// Light theme
+body {
+  --color-background: var(--color-white);
+  --color-on-background: var(--color-dark);
+  --color-primary: var(--color-purple);
+  --color-on-primary: var(--color-white);
+
+  --gradient: linear-gradient(
+    35deg,
+    var(--color-purple) 0%,
+    var(--color-purple) 10%,
+    var(--color-secondary) 100%
+  );
+}
+
+// Dark theme
+body.dark-theme {
+  --color-background: var(--color-dark);
+  --color-on-background: var(--color-white);
+  --color-primary: var(--color-purple-light);
+  --color-on-primary: var(--color-dark);
+
+  --gradient: linear-gradient(
+    35deg,
+    var(--color-purple-light) 0%,
+    var(--color-purple-light) 19%,
+    var(--color-secondary) 100%
+  );
+}
+
 // Media query widths
 $screen-sm: 640px;
 $screen-md: 768px;
