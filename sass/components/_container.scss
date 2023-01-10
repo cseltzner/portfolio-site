@@ -1,5 +1,13 @@
 .container {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: $screen-sm) {
+  .container {
+    width: 90%;
+  }
 }
 
 @media (min-width: $screen-sm) {
