@@ -1,15 +1,16 @@
 // Colors
 :root {
   --color-white: #f2f7ff;
-  --color-dark: #313440;
+  --color-dark: #23252e;
   --color-purple: #5d3d80;
-  --color-purple-light: #d0bdf4;
+  --color-purple-light: #ddcafc;
   --color-secondary: #579ec2;
 }
 
 // Light theme
 body {
   --color-background: var(--color-white);
+  --color-background-secondary: var(--color-purple-light);
   --color-on-background: var(--color-dark);
   --color-primary: var(--color-purple);
   --color-on-primary: var(--color-white);
@@ -25,6 +26,7 @@ body {
 // Dark theme
 body.dark-theme {
   --color-background: var(--color-dark);
+  --color-background-secondary: var(--color-purple);
   --color-on-background: var(--color-white);
   --color-primary: var(--color-purple-light);
   --color-on-primary: var(--color-dark);
