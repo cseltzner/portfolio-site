@@ -3,17 +3,26 @@
   padding: 8rem 1rem;
   text-align: center;
   background-color: var(--color-background-secondary);
-  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 5rem, 100% 100%, 0 100%);
 
   &__heading {
     font-size: 2rem;
   }
 
-  & p:first-of-type {
+  & > p:first-of-type {
     margin-top: 2rem;
   }
 
-  & p:last-of-type {
+  & > p:last-of-type {
     margin-bottom: 2rem;
+  }
+
+  &__card-set {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 6rem;
+    row-gap: 1rem;
   }
 }

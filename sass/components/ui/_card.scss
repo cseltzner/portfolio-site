@@ -1,0 +1,49 @@
+.card {
+  flex-basis: min(45%, 300px);
+  font-size: 1rem;
+  @include ui-transition;
+
+  &--invisible {
+    display: none;
+  }
+
+  &__img {
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    & img {
+      width: 90%;
+      height: 90%;
+    }
+  }
+
+  &__title {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  &__description {
+    opacity: 0.9;
+    text-align: start;
+    padding: 0.8rem 0;
+  }
+
+  &__btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transform-origin: top;
+    opacity: 0;
+    @include ui-transition;
+  }
+
+  &:hover &__btn-group {
+    opacity: 1;
+  }
+}

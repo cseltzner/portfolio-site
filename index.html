@@ -58,10 +58,12 @@
           interesting projects together.
         </p>
         <div class="hero__btn-group">
-          <a href="#contact"><button class="btn">Contact me</button></a>
-          <a href="#projects"
-            ><button class="btn btn-outline">View my projects</button></a
-          >
+          <a href="#contact">
+            <button class="btn">Contact me</button>
+          </a>
+          <a href="#projects">
+            <button class="btn btn-outline">View my projects</button>
+          </a>
         </div>
       </div>
     </section>
@@ -74,6 +76,513 @@
       <p class="projects__subheading">
         If you have any questions feel free to contact me for more information.
       </p>
+      <div class="container">
+        <!-- Chips -->
+        <fieldset class="chip-group">
+          <input
+            class="chip-group__input"
+            type="radio"
+            name="projects"
+            id="all"
+            checked
+            value="all"
+          />
+          <label class="chip-group__label" for="all">All</label>
+
+          <input
+            class="chip-group__input"
+            type="radio"
+            name="projects"
+            id="html"
+            value="html"
+          />
+          <label class="chip-group__label" for="html">HTML & CSS</label>
+
+          <input
+            class="chip-group__input"
+            type="radio"
+            name="projects"
+            id="js"
+            value="js"
+          />
+          <label class="chip-group__label" for="js">JavaScript</label>
+
+          <input
+            class="chip-group__input"
+            type="radio"
+            name="projects"
+            id="react"
+            value="react"
+          />
+          <label class="chip-group__label" for="react">React</label>
+          <input
+            class="chip-group__input"
+            type="radio"
+            name="projects"
+            id="nextjs"
+            value="nextjs"
+          />
+          <label class="chip-group__label" for="nextjs">NextJS</label>
+          <input
+            class="chip-group__input"
+            type="radio"
+            name="projects"
+            id="express"
+            value="express"
+          />
+          <label class="chip-group__label" for="express">Express</label>
+          <input
+            class="chip-group__input"
+            type="radio"
+            name="projects"
+            id="kotlin"
+            value="kotlin"
+          />
+          <label class="chip-group__label" for="kotlin">Kotlin</label>
+        </fieldset>
+
+        <!-- Project Cards -->
+        <div class="projects__card-set">
+          <!-- Card 1 -->
+          <div class="card" data-categories="react/nextjs/express">
+            <div class="card__img">
+              <img
+                src="./static/thumbnails/seltzport_thumbnail_compressed.jpg"
+                alt="Seltzport"
+              />
+            </div>
+            <h3 class="card__title">SeltzPort</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">React</div>
+              <div class="chip-group__disabled">Next.js</div>
+              <div class="chip-group__disabled">Express</div>
+            </div>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium architecto consequuntur cupiditate esse exercitationem
+              molestias nam necessitatibus nesciunt omnis sapiente.
+            </p>
+            <div class="card__btn-group">
+              <a href="#">
+                <button class="btn btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                  <span class="btn-icon__text"> View site </span>
+                </button>
+              </a>
+              <a href="#">
+                <button class="btn btn-outline btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span class="btn-icon__text">Github repository</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- End of card -->
+          <!-- Card 2 -->
+          <div class="card" data-categories="react/express">
+            <div class="card__img">
+              <img
+                src="./static/thumbnails/planet_thumbnail_compressed.jpg"
+                alt="PlanetFacts"
+              />
+            </div>
+            <h3 class="card__title">PlanetFacts</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">React</div>
+              <div class="chip-group__disabled">Express</div>
+            </div>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium architecto consequuntur cupiditate esse exercitationem
+              molestias nam necessitatibus nesciunt omnis sapiente.
+            </p>
+            <div class="card__btn-group">
+              <a href="#">
+                <button class="btn btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                  <span class="btn-icon__text"> View site </span>
+                </button>
+              </a>
+              <a href="#">
+                <button class="btn btn-outline btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span class="btn-icon__text">Github repository</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- End of card -->
+          <!-- Card 3 -->
+          <div class="card" data-categories="react">
+            <div class="card__img">
+              <img
+                src="./static/thumbnails/pw_thumbnail_compressed.jpg"
+                alt="Password generator"
+              />
+            </div>
+            <h3 class="card__title">Password Generator</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">React</div>
+            </div>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium architecto consequuntur cupiditate esse exercitationem
+              molestias nam necessitatibus nesciunt omnis sapiente.
+            </p>
+            <div class="card__btn-group">
+              <a href="#">
+                <button class="btn btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                  <span class="btn-icon__text"> View site </span>
+                </button>
+              </a>
+              <a href="#">
+                <button class="btn btn-outline btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span class="btn-icon__text">Github repository</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- End of card -->
+          <!-- Card 4 -->
+          <div class="card" data-categories="html/js">
+            <div class="card__img">
+              <img
+                src="./static/thumbnails/js_weather_thumbnail_compressed.jpg"
+                alt="JS Weather"
+              />
+            </div>
+            <h3 class="card__title">JS Weather</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">HTML&CSS</div>
+              <div class="chip-group__disabled">JavaScript</div>
+            </div>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium architecto consequuntur cupiditate esse exercitationem
+              molestias nam necessitatibus nesciunt omnis sapiente.
+            </p>
+            <div class="card__btn-group">
+              <a href="#">
+                <button class="btn btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                  <span class="btn-icon__text"> View site </span>
+                </button>
+              </a>
+              <a href="#">
+                <button class="btn btn-outline btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span class="btn-icon__text">Github repository</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- End of card -->
+          <!-- Card 5 -->
+          <div class="card" data-categories="html">
+            <div class="card__img">
+              <img
+                src="./static/thumbnails/insure_thumbnail_compressed.jpg"
+                alt="Insure"
+              />
+            </div>
+            <h3 class="card__title">Insure</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">HTML&CSS</div>
+            </div>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium architecto consequuntur cupiditate esse exercitationem
+              molestias nam necessitatibus nesciunt omnis sapiente.
+            </p>
+            <div class="card__btn-group">
+              <a href="#">
+                <button class="btn btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                  <span class="btn-icon__text"> View site </span>
+                </button>
+              </a>
+              <a href="#">
+                <button class="btn btn-outline btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span class="btn-icon__text">Github repository</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- End of card -->
+          <!-- Card 6 -->
+          <div class="card" data-categories="html">
+            <div class="card__img">
+              <img
+                src="./static/thumbnails/dashboard_thumbnail_compressed.jpg"
+                alt="Admin Dashboard"
+              />
+            </div>
+            <h3 class="card__title">Admin Dashboard</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">HTML&CSS</div>
+            </div>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium architecto consequuntur cupiditate esse exercitationem
+              molestias nam necessitatibus nesciunt omnis sapiente.
+            </p>
+            <div class="card__btn-group">
+              <a href="#">
+                <button class="btn btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                  <span class="btn-icon__text"> View site </span>
+                </button>
+              </a>
+              <a href="#">
+                <button class="btn btn-outline btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span class="btn-icon__text">Github repository</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- End of card -->
+          <!-- Card 7 -->
+          <div class="card" data-categories="html/javascript">
+            <div class="card__img">
+              <img
+                src="./static/thumbnails/calculator_thumbnail_compressed.jpg"
+                alt="Calculator"
+              />
+            </div>
+            <h3 class="card__title">Calculator</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">HTML&CSS</div>
+              <div class="chip-group__disabled">JavaScript</div>
+            </div>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium architecto consequuntur cupiditate esse exercitationem
+              molestias nam necessitatibus nesciunt omnis sapiente.
+            </p>
+            <div class="card__btn-group">
+              <a href="#">
+                <button class="btn btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                  <span class="btn-icon__text"> View site </span>
+                </button>
+              </a>
+              <a href="#">
+                <button class="btn btn-outline btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span class="btn-icon__text">Github repository</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- End of card -->
+          <!-- Card 8 -->
+          <div class="card" data-categories="kotlin">
+            <div class="card__img">
+              <img
+                src="./static/thumbnails/weatherapp_compressed.jpg"
+                alt="Kotlin weather"
+              />
+            </div>
+            <h3 class="card__title">Kotlin weather</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">Kotlin</div>
+            </div>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium architecto consequuntur cupiditate esse exercitationem
+              molestias nam necessitatibus nesciunt omnis sapiente.
+            </p>
+            <div class="card__btn-group">
+              <a href="#">
+                <button class="btn btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                  <span class="btn-icon__text"> View site </span>
+                </button>
+              </a>
+              <a href="#">
+                <button class="btn btn-outline btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span class="btn-icon__text">Github repository</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- End of card -->
+          <!-- End of card set -->
+        </div>
+      </div>
     </section>
   </body>
 </html>

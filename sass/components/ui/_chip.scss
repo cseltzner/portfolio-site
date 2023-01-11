@@ -1,0 +1,47 @@
+.chip-group {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    background-color: var(--color-background);
+    padding: 0.5rem 1.5rem;
+    border-radius: 10000px;
+    cursor: pointer;
+    @include ui-transition;
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: $shadow-xtra-sm;
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+
+  &__input:checked + &__label {
+    background: var(--gradient);
+    color: white;
+  }
+
+  // Visual effect only
+  &__disabled {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    background-color: var(--color-background);
+    padding: 0.25rem 1rem;
+    border-radius: 10000px;
+    @include ui-transition;
+  }
+}
