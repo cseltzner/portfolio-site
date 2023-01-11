@@ -4,10 +4,12 @@
 @import "base/utilities";
 @import "base/base";
 
-@import "components/container";
-@import "components/button";
+@import "components/ui/container";
+@import "components/ui/button";
+@import "components/ui/break";
 
 @import "pages/index";
 
-@import "components/navbar";
-@import "components/hero";
+@import "components/layout/navbar";
+@import "components/layout/hero";
+@import "components/layout/projects";
