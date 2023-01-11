@@ -4,7 +4,7 @@
   --color-dark: #313440;
   --color-purple: #5d3d80;
   --color-purple-light: #d0bdf4;
-  --color-secondary: #a0d2eb;
+  --color-secondary: #579ec2;
 }
 
 // Light theme
@@ -16,9 +16,9 @@ body {
 
   --gradient: linear-gradient(
     35deg,
-    var(--color-purple-light) 0%,
-    var(--color-purple) 15%,
-    var(--color-dark) 100%
+    var(--color-purple) 0%,
+    var(--color-purple) 30%,
+    var(--color-secondary) 100%
   );
 }
 
@@ -31,9 +31,9 @@ body.dark-theme {
 
   --gradient: linear-gradient(
     35deg,
-    var(--color-purple-light) 0%,
-    var(--color-purple-light) 19%,
-    var(--color-dark) 100%
+    var(--color-purple) 0%,
+    var(--color-purple) 30%,
+    var(--color-secondary) 100%
   );
 }
 

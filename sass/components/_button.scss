@@ -1,0 +1,32 @@
+.btn {
+  border: none;
+  background: var(--gradient);
+  color: white;
+  font-family: inherit;
+  padding: 0.9rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  @include ui-transition;
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-0.1rem);
+  }
+
+  &:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transform: translateY(-0.05rem);
+  }
+}
+
+.btn.btn-outline {
+  position: relative;
+  border: 1px solid var(--color-primary);
+  @include gradient-text;
+  box-shadow: none;
+
+  &:hover {
+    border: 2px solid var(--color-primary);
+  }
+}

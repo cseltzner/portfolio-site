@@ -3,3 +3,7 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+@mixin ui-transition {
+  transition: all 150ms ease-in-out;
+}
