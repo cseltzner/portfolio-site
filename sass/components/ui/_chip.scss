@@ -42,6 +42,7 @@
     background-color: var(--color-background);
     padding: 0.25rem 1rem;
     border-radius: 10000px;
+    user-select: none;
     @include ui-transition;
   }
 }
