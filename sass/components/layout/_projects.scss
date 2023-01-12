@@ -3,7 +3,7 @@
   padding: 8rem 1rem;
   text-align: center;
   background-color: var(--color-background-secondary);
-  clip-path: polygon(0 0, 100% 5rem, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 5rem, 100% 100%, 0 calc(100% - 5rem));
 
   &__heading {
     font-size: 2rem;

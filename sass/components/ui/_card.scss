@@ -51,4 +51,8 @@
   &:hover &__btn-group {
     opacity: 1;
   }
+
+  &__inline-link {
+    text-decoration: underline;
+  }
 }
