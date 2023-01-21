@@ -40,7 +40,7 @@
     </nav>
 
     <!-- Hero section -->
-    <section class="hero container">
+    <section class="hero container" id="hero">
       <div class="hero__img">
         <div class="hero__pattern hero__pattern--1"></div>
         <div class="hero__pattern hero__pattern--2"></div>
@@ -69,7 +69,7 @@
     </section>
 
     <!-- Projects section -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2 class="projects__heading">Projects</h2>
       <div class="break"></div>
       <p class="projects__subheading">Check out my open source projects.</p>
@@ -144,7 +144,7 @@
         <!-- Project Cards -->
         <div class="projects__card-set">
           <!-- Card 1 -->
-          <div class="card" data-categories="react/nextjs/express">
+          <article class="card" data-categories="react/nextjs/express">
             <a
               class="card__img"
               href="https://www.seltzport.com"
@@ -217,10 +217,10 @@
                 </button>
               </a>
             </div>
-          </div>
+          </article>
           <!-- End of card -->
           <!-- Card 2 -->
-          <div class="card card--invisible" data-categories="react/express">
+          <article class="card" data-categories="react/express">
             <a
               class="card__img"
               href="http://143.110.236.194:3000/"
@@ -281,10 +281,10 @@
                 </button>
               </a>
             </div>
-          </div>
+          </article>
           <!-- End of card -->
           <!-- Card 3 -->
-          <div class="card" data-categories="react">
+          <article class="card" data-categories="react">
             <a
               class="card__img"
               href="https://cseltzner.github.io/password-generator/"
@@ -343,10 +343,10 @@
                 </button>
               </a>
             </div>
-          </div>
+          </article>
           <!-- End of card -->
           <!-- Card 4 -->
-          <div class="card" data-categories="html/js">
+          <article class="card" data-categories="html/js">
             <a
               class="card__img"
               href="https://cseltzner.github.io/JS-Weather/"
@@ -401,10 +401,10 @@
                 </button>
               </a>
             </div>
-          </div>
+          </article>
           <!-- End of card -->
           <!-- Card 5 -->
-          <div class="card" data-categories="html">
+          <article class="card" data-categories="html">
             <a
               class="card__img"
               href="https://cseltzner.github.io/insure-landing-page/"
@@ -470,10 +470,10 @@
                 </button>
               </a>
             </div>
-          </div>
+          </article>
           <!-- End of card -->
           <!-- Card 6 -->
-          <div class="card" data-categories="html">
+          <article class="card" data-categories="html">
             <a
               class="card__img"
               href="https://cseltzner.github.io/Admin-Dashboard-HTML-CSS/"
@@ -539,10 +539,10 @@
                 </button>
               </a>
             </div>
-          </div>
+          </article>
           <!-- End of card -->
           <!-- Card 7 -->
-          <div class="card" data-categories="html/javascript">
+          <article class="card" data-categories="html/javascript">
             <a
               class="card__img"
               href="https://cseltzner.github.io/JavaScript-Simple-Calculator/"
@@ -603,10 +603,10 @@
                 </button>
               </a>
             </div>
-          </div>
+          </article>
           <!-- End of card -->
           <!-- Card 8 -->
-          <div class="card" data-categories="kotlin">
+          <article class="card" data-categories="kotlin">
             <a
               class="card__img"
               href="https://github.com/cseltzner/Weather"
@@ -645,12 +645,85 @@
                 </button>
               </a>
             </div>
-          </div>
+          </article>
           <!-- End of card -->
           <!-- End of card set -->
         </div>
       </div>
     </section>
-    <section style="height: 50rem"></section>
+    <!-- Resume section -->
+    <section class="resume container" id="resume">
+      <h2 class="resume__header">Resume</h2>
+      <p class="resume__subheader">
+        I started my journey as a pre-medical student until I found enjoyment in
+        the ever-changing field of development. I have spent the last year
+        focusing on improving my ability to develop interesting and accessible
+        React-based web applications.
+      </p>
+      <!-- Resume education -->
+      <div class="resume__subcontainer">
+        <article class="resume__article">
+          <h3 class="resume__content-header">Education</h3>
+          <p class="resume__content-title">University of Wisconsin - Madison</p>
+          <p class="resume__content-description">B.S. - Major in Biology</p>
+          <p class="resume__content-description">B.S. - Major in Economics</p>
+          <p class="resume__content-description--sub">2017 - 2021</p>
+        </article>
+        <!-- Resume Experience -->
+        <article class="resume__article">
+          <h3 class="resume__content-header">Work Experience</h3>
+
+          <article class="resume__job">
+            <p class="resume__content-title">Head Supervisor</p>
+            <p class="resume__content-description">
+              Gordon Dining & Event Center
+            </p>
+            <p class="resume__content-description">
+              Role: Lead a team of several hundred students. Manage hiring and
+              training processes
+            </p>
+            <p class="resume__content-description--sub">2019 - 2021</p>
+          </article>
+          <article class="resume__job">
+            <p class="resume__content-title">Medical Scribe</p>
+            <p class="resume__content-description">Essential Scribe</p>
+            <p class="resume__content-description">
+              Role: Work with emergency room physicians to record the details of
+              patient visit, including patient history, physical examination,
+              and diagnoses
+            </p>
+            <p class="resume__content-description--sub">2021 - 2022</p>
+          </article>
+        </article>
+      </div>
+      <!-- Resume Skillset -->
+      <article class="resume__article-wide">
+        <h3 class="resume__content-header">Skillset</h3>
+        <ul class="resume__article-row">
+          <li class="resume__article-col">HTML & CSS</li>
+          <li class="resume__article-col">JavaScript</li>
+          <li class="resume__article-col">React</li>
+          <li class="resume__article-col">NextJS</li>
+          <li class="resume__article-col">Kotlin</li>
+          <li class="resume__article-col">Java</li>
+          <li class="resume__article-col">TailwindCSS</li>
+        </ul>
+        <ul class="resume__article-row">
+          <li class="resume__article-col">Leadership</li>
+          <li class="resume__article-col">Professional attitude</li>
+          <li class="resume__article-col">Experience in medical environment</li>
+        </ul>
+        <ul class="resume__article-row">
+          <li class="resume__article-col">Jest</li>
+          <li class="resume__article-col">React Testing Library</li>
+          <li class="resume__article-col">Cypress</li>
+          <li class="resume__article-col">TailwindCSS</li>
+          <li class="resume__article-col">Git</li>
+          <li class="resume__article-col">Webpack</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="contact" style="height: 20rem"></section>
   </body>
 </html>
